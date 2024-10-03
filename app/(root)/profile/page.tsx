@@ -17,7 +17,7 @@ const Profile = async ({ searchParams }: SearchParamProps) => {
   const images = await getUserImages({ page, userId: user._id });
 
   return (
-    <>
+    <div>
       <Header title="Profile" />
 
       <section className="profile">
@@ -57,7 +57,7 @@ const Profile = async ({ searchParams }: SearchParamProps) => {
           page={page}
         />
       </section>
-    </>
+    </div>
   );
 };
 

@@ -17,7 +17,7 @@ const Credits = async () => {
   const user = await getUserById(userId);
 
   return (
-    <>
+    <div>
       <Header
         title="Buy Credits"
         subtitle="Choose a credit package that suits your needs!"
@@ -74,7 +74,7 @@ const Credits = async () => {
           ))}
         </ul>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -18,7 +18,7 @@ const Page = async ({ params: { id } }: SearchParamProps) => {
     transformationTypes[image.transformationType as TransformationTypeKey];
 
   return (
-    <>
+    <div>
       <Header title={transformation.title} subtitle={transformation.subTitle} />
 
       <section className="mt-10">
@@ -31,7 +31,7 @@ const Page = async ({ params: { id } }: SearchParamProps) => {
           data={image}
         />
       </section>
-    </>
+    </div>
   );
 };
 
